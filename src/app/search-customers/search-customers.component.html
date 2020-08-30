@@ -1,0 +1,18 @@
+<h3>Find By Identificator</h3>
+<div style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="lastname">Identificator</label>
+      <input type="text" class="form-control" id="Identificator" required [(ngModel)]="identificator" name="Identificator">
+    </div>
+ 
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+<ul>
+    <div *ngIf="customer">
+    <h4>{{customer.id}} - {{customer.identificator}} - {{customer.identificator}} - {{customer.age}}</h4>
+    </div>
+</ul>
